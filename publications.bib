@@ -1,0 +1,76 @@
+@inproceedings{WWW2023,
+author = {Lu, Xiaotian and Li, Jiyi and Takeuchi, Koh and Kashima, Hisashi},
+title = {Multiview Representation Learning from Crowdsourced Triplet Comparisons},
+year = {2023},
+isbn = {9781450394161},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543507.3583431},
+doi = {10.1145/3543507.3583431},
+abstract = {Crowdsourcing has been used to collect data at scale in numerous fields. Triplet similarity comparison is a type of crowdsourcing task, in which crowd workers are asked the question “among three given objects, which two are more similar?”, which is relatively easy for humans to answer. However, the comparison can be sometimes based on multiple views, i.e., different independent attributes such as color and shape. Each view may lead to different results for the same three objects. Although an algorithm was proposed in prior work to produce multiview embeddings, it involves at least two problems: (1) the existing algorithm cannot independently predict multiview embeddings for a new sample, and (2) different people may prefer different views. In this study, we propose an end-to-end inductive deep learning framework to solve the multiview representation learning problem. The results show that our proposed method can obtain multiview embeddings of any object, in which each view corresponds to an independent attribute of the object. We collected two datasets from a crowdsourcing platform to experimentally investigate the performance of our proposed approach compared to conventional baseline methods.},
+booktitle = {Proceedings of the ACM Web Conference 2023},
+pages = {3827–3836},
+numpages = {10},
+keywords = {Crowdsourcing, Multiview, Representation Learning, Triplet},
+location = {Austin, TX, USA},
+series = {WWW '23}
+}
+
+
+
+@inproceedings{ACL2023Findings,
+    title = "Multi-Domain Dialogue State Tracking with Disentangled Domain-Slot Attention",
+    author = "Yang, Longfei  and
+      Li, Jiyi  and
+      Li, Sheng  and
+      Shinozaki, Takahiro",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.304",
+    doi = "10.18653/v1/2023.findings-acl.304",
+    pages = "4928--4938",
+    abstract = "As the core of task-oriented dialogue systems, dialogue state tracking (DST) is designed to track the dialogue state through the conversation between users and systems. Multi-domain DST has been an important challenge in which the dialogue states across multiple domains need to consider. In recent mainstream approaches, each domain and slot are aggregated and regarded as a single query feeding into attention with the dialogue history to obtain domain-slot specific representations. In this work, we propose disentangled domain-slot attention for multi-domain dialogue state tracking. The proposed approach disentangles the domain-slot specific information extraction in a flexible and context-dependent manner by separating the query about domains and slots in the attention component. Through a series of experiments on MultiWOZ 2.0 and MultiWOZ 2.4 datasets, we demonstrate that our proposed approach outperforms the standard multi-head attention with aggregated domain-slot query.",
+}
+
+
+@inproceedings{NLP4ConvAI2023,
+    title = "Dialogue State Tracking with Sparse Local Slot Attention",
+    author = "Yang, Longfei  and
+      Li, Jiyi  and
+      Li, Sheng  and
+      Shinozaki, Takahiro",
+    editor = "Chen, Yun-Nung  and
+      Rastogi, Abhinav",
+    booktitle = "Proceedings of the 5th Workshop on NLP for Conversational AI (NLP4ConvAI 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.nlp4convai-1.4",
+    doi = "10.18653/v1/2023.nlp4convai-1.4",
+    pages = "39--46",
+    abstract = "Dialogue state tracking (DST) is designed to track the dialogue state during the conversations between users and systems, which is the core of task-oriented dialogue systems. Mainstream models predict the values for each slot with fully token-wise slot attention from dialogue history. However, such operations may result in overlooking the neighboring relationship. Moreover, it may lead the model to assign probability mass to irrelevant parts, while these parts contribute little. It becomes severe with the increase in dialogue length. Therefore, we investigate sparse local slot attention for DST in this work. Slot-specific local semantic information is obtained at a sub-sampled temporal resolution capturing local dependencies for each slot. Then these local representations are attended with sparse attention weights to guide the model to pay attention to relevant parts of local information for subsequent state value prediction. The experimental results on MultiWOZ 2.0 and 2.4 datasets show that the proposed approach effectively improves the performance of ontology-based dialogue state tracking, and performs better than token-wise attention for long dialogues.",
+}
+
+@inproceedings{ICONIP2023Crowd,
+author = {Li, Jiyi},
+title = {Learning Representations for Sparse Crowd Answers},
+year = {2023},
+isbn = {978-981-99-8075-8},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-981-99-8076-5_34},
+doi = {10.1007/978-981-99-8076-5_34},
+abstract = {When collecting answers from crowds, if there are many instances, each worker can only provide the answers to a small subset of the instances, and the instance-worker answer matrix is thus sparse. The solutions for improving the quality of crowd answers such as answer aggregation are usually proposed in an unsupervised fashion. In this paper, for enhancing the quality of crowd answers used for inferring true answers, we propose a solution with a self-supervised fashion to effectively learn the potential information in the sparse crowd answers. We propose a method named CrowdLR which first learns rich instance and worker representations from the crowd answers based on two types of self-supervised signals. We create a multi-task model with a Siamese structure to learn two classification tasks for two self-supervised signals in one framework. We then utilize the learned representations to complete the answers to fill the missing answers, and can utilize the answer aggregation methods to the complete answers. The experimental results based on real datasets show that our approach can effectively learn the representations from crowd answers and improve the performance of answer aggregation especially when the crowd answers are sparse.},
+booktitle = {Neural Information Processing: 30th International Conference, ICONIP 2023, Changsha, China, November 20–23, 2023, Proceedings, Part VI},
+pages = {468–480},
+numpages = {13},
+keywords = {Representation Learning, Answer Aggregation, Crowdsourcing},
+location = {Changsha, China}
+}
